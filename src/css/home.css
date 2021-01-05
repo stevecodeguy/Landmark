@@ -61,6 +61,8 @@
 .home .content-1 {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 120px;
+  padding-bottom: 115px;
 }
 
 .home .content-1 img {
@@ -122,4 +124,132 @@
   transform-origin: right center;
   transform: scaleX(0);
   box-sizing: inherit;
+}
+
+.home .content-2 {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+
+.home .content-2 img {
+  max-width: 750px;
+  height: auto;
+}
+
+.home .content-2 div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.home .content-2 div a h2 {
+    font-size: 0.9rem;
+    letter-spacing: 4.69px;
+    color: #fff;
+}
+
+.home .content-2 div a span {
+    font-size: 4.5rem;
+    font-weight: 100;
+    letter-spacing: 1.36px;
+    color: #fff;
+}
+
+.home .content-2 div a div {
+    margin-top: 40px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.29px;
+    color: #ceaf70;
+}
+
+.home .content-2 div a img {
+    width: 363px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.home .content-2 div a span:last-child {
+    position: absolute;
+    bottom: 20px;
+    color: #ceaf70;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 2.29px;
+    z-index: 90;
+}
+
+.home .content-3 a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.home .content-3 img {
+    max-width: 465px;
+}
+
+.home .content-3 h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.home .content-3 h2 span:first-child{
+    font-size: 0.9rem;
+    letter-spacing: 4.69px;
+}
+
+.home .content-3 h2 span:last-child{
+    font-size: 4.3rem;
+    font-weight: 100;
+    letter-spacing: 1.36px;
+}
+
+.home .content-3 div div {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.29px;
+    color: #ceaf70;
+}
+
+.home .content-4 a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.home .content-4 img {
+    max-width: 494px;
+}
+
+.home .content-4 h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.home .content-4 h2 span:first-child{
+    font-size: 0.9rem;
+    letter-spacing: 4.69px;
+}
+
+.home .content-4 h2 span:last-child{
+    font-size: 4.3rem;
+    font-weight: 100;
+    letter-spacing: 1.36px;
+}
+
+.home .content-4 div div {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.29px;
+    color: #ceaf70;
 }
