@@ -2,22 +2,25 @@ import React, { useState } from 'react';
 import ReactModal from 'react-modal';
 import { Link } from 'react-router-dom';
 
-import '../css/modalOffices.css';
+import '../css/modalTour.css';
 
-import offices from '../assets/images/modal/offices.jpg';
-import officesLogo from '../assets/images/modal/offices-logo.png';
+import tour from '../assets/images/modal/tour.jpg';
 
-export default function ModalOffices() {
+export default function ModalTour() {
   const [openModal, setOpenModal] = useState(true);
 
   const closeModal = () => { setOpenModal(false) }
 
   return (
     <ReactModal
-      className="introducing"
+      className="tourModal"
       isOpen={openModal}
       style={{
         overlay: {
+          width: 0,
+          height: 0,
+          zIndex: -999,
+
           backgroundColor: 'rgba(0, 0, 0, 0.7)'
         },
         content: {
@@ -31,15 +34,10 @@ export default function ModalOffices() {
         <hr />
         <hr />
       </button>
-      <div className="modal-image">
-        <img src={offices} alt="Landmark on Robson offices" />
-      </div>
       <div className="modal-content">
         <div>
-          <p className="intro">INTRODUCING</p>
-          <img src={officesLogo} alt="Logo for Landmark on Robson offices" />
-          <p className="message-1">A Rare Office Ownership Opportunity Coming to Downtown Vancouver’s Coveted Robson Street.</p>
-          <p className="message-2">Register today to be the first to receive information on this exclusive offering.</p>
+          <img src={tour} alt="Logo for Landmark on Robson offices" />
+          <span className="message-1">Tour Display Suites</span>
           <Link type="button" className="register" to="/offices/register">Register Now</Link>
         </div>
       </div>

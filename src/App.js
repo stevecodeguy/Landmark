@@ -8,6 +8,7 @@ import './assets/fonts/fonts.css';
 import './css/universal.css';
 
 import ModalOffices from './components/ModalOffices';
+import ModalTour from './components/ModalTour';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 // import OnlyOneRobson from './pages/OnlyOneRobson';
@@ -20,6 +21,7 @@ function App() {
       <Router>
         <header className="App-header">
           <ModalOffices />
+          {/* <ModalTour /> */}
           <Nav />
         </header>
         <section>
