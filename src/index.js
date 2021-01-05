@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ModalProvider } from './modal_context/ModalContext';
+import { ScreenProvider } from './modal_context/ScreenContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModalProvider>
-      <App />
-    </ModalProvider>
+    <ScreenProvider>
+      <ModalProvider>
+        <App />
+      </ModalProvider>
+    </ScreenProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

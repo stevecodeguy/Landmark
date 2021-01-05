@@ -9,6 +9,7 @@ import './assets/fonts/fonts.css';
 import './css/universal.css';
 
 import { ModalContext } from './modal_context/ModalContext';
+import { ScreenContext } from './modal_context/ScreenContext';
 
 import ModalOffices from './components/ModalOffices';
 import ModalTour from './components/ModalTour';
@@ -20,16 +21,20 @@ import Home from './pages/Home';
 
 function App() {
   const { showIntroModal, showTourModal } = useContext(ModalContext);
+  const { setScreenDistanceScrolled } = useContext(ScreenContext);
 
-  // useEffect(() => {
-  //   if (window.performance) {
-  //     if (performance.navigation.type == 1) {
-  //       alert( "This page is reloaded" );
-  //     } else {
-  //       alert( "This page is not reloaded");
-  //     }
-  //   }
-  // }, [])
+  const scrollY = () => {
+    const position = window.pageYOffset;
+    setScreenDistanceScrolled(position);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollY, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', scrollY);
+    }
+  });
 
   return (
     <>

@@ -19,9 +19,9 @@ export default function ModalTour() {
       </button>
       <img src={tour} alt="Tour Display Suites Overview" />
       <p>TOUR DISPLAY SUITES</p>
-      <div className="circle">
+      <Link to="/virtual-tours" className="circle">
         <span>►</span>
-      </div>
+      </Link>
     </div>
   );
 }

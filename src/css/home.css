@@ -1,3 +1,107 @@
-.banner {
-    background-image: url('../assets/images/home/banner.jpg');
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .banner {
+  background-image: url("../assets/images/home/banner.jpg");
+}
+
+.home h1 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  margin-left: 50px;
+  color: #fff;
+}
+
+.home h1 span:first-child {
+  font-size: 1rem;
+  transition: 0.8s ease;
+  letter-spacing: 3px;
+}
+
+.home h1 span:last-child {
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.home .life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home .life h3 {
+  margin: 90px auto 40px;
+  font-size: 0.9rem;
+  letter-spacing: 4.69px;
+  color: #ceaf70;
+}
+
+.home .life .slideText {
+  width: 363px;
+  height: 190px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 135px;
+}
+
+.home .life .slideText h6 {
+  font-size: 8rem;
+  font-weight: 100;
+  color: #fff;
+  margin: 0 23px;
+}
+
+.home .content-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .content-1 .watchLine {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home .content-1 .watchLine div {
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    left: 0;
+    /* border: 10px blue solid; */
+}
+
+.home .content-1 img {
+    max-width: 650px;
+    width: 100%;
+}
+
+.home .content-1 div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .content-1 h2 {
+    text-transform: uppercase;
+}
+
+.home .content-1 h2:first-child {
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 4.69px;
+}
+
+.home .content-1 h2:last-child {
+    color: #ceaf70;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.29px;
+    margin-top: 40px;
 }
