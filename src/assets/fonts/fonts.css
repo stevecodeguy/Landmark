@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/8f52a74cf08d601fa9d81736a9560321f80fb358/c4786/fonts/helveticaneueltstd-ultlt.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/9dcc9cb7169fcdce16aade8a16cd62180a790235/2bf28/fonts/helveticaneueltstd-ultlt.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/77e5fe09db90a0d6e175e07d7b449dc1322e99ab/30483/fonts/helveticaneueltstd-lt.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/fd747898429d883877ed9b6b46e849796cc7c037/767e2/fonts/helveticaneueltstd-lt.woff")
+      format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/41df5a8e876a5c3451485de28f0c7c33ab761da8/b4e08/fonts/helveticaneueltstd-th.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/8d34e728d081c6a584c93bd4ae5bedd9974fd98e/f37d3/fonts/helveticaneueltstd-th.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/e493d81813f1a53679101f9d2e13f81cb7818c4b/ceb62/fonts/helveticaneueltstd-roman.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/f14adcef12e2e026427ac0ad0bd50a3208741b86/c79c4/fonts/helveticaneueltstd-roman.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/5e7a049b1ebc12a13b5f108c16fd19cbcb876216/0e12f/fonts/helveticaneueltstd-md.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/11036ac591159444f7be6f96c093292ea56382ce/36b4f/fonts/helveticaneueltstd-md.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("https://d33wubrfki0l68.cloudfront.net/98a52dc30cbce25edd324f7f568e5fbc9cc683b3/255b7/fonts/helveticaneueltstd-bd.woff2")
+      format("woff2"),
+    url("https://d33wubrfki0l68.cloudfront.net/f0775bb1ac8531aecf5fb7e083ad6258ead1c47e/2ed62/fonts/helveticaneueltstd-bd.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
