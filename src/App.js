@@ -1,21 +1,39 @@
-import "./assets/fonts/fonts.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
+import './assets/fonts/fonts.css';
+import './css/universal.css';
+
+import ModalOffices from './components/ModalOffices';
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import OnlyOneRobson from './pages/OnlyOneRobson';
-import RefinedResidences from './pages/RefinedResidences';
-import TwoSeventyView from './pages/TwoSeventyView';
+// import OnlyOneRobson from './pages/OnlyOneRobson';
+// import RefinedResidences from './pages/RefinedResidences';
+// import TwoSeventyView from './pages/TwoSeventyView';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Nav />
-        <Home />
-        <OnlyOneRobson />
-        <RefinedResidences />
-        <TwoSeventyView />
-      </header>
-    </div>
+    <>
+      <Router>
+        <header className="App-header">
+          <ModalOffices />
+          <Nav />
+        </header>
+        <section>
+          <Switch>
+            <Route path='/' exact>
+              <Home />
+              {/* <OnlyOneRobson />
+              <RefinedResidences />
+              <TwoSeventyView /> */}
+            </Route>
+          </Switch>
+        </section>
+      </Router>
+    </>
   );
 }
 

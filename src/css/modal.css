@@ -1,0 +1,109 @@
+.ReactModal__Body--open nav {
+  opacity: 0.5;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 980px;
+  height: 560px;
+  background-color: #1c1c26;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.ReactModal__Content .modal-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+
+.ReactModal__Content .modal-close hr{
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  width: 27px;
+}
+
+.ReactModal__Content .modal-close hr:first-child {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.ReactModal__Content .modal-close hr:last-child {
+  transform: rotate(135deg) translateY(5px);
+}
+
+.ReactModal__Content .modal-image {
+  width: 456px;
+  height: 100%;
+}
+
+.ReactModal__Content .modal-content {
+  height: 100%;
+  width: 377px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Content .modal-content p {
+  color: #fff;
+  text-align: center;
+}
+
+.ReactModal__Content .intro {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4.7px;
+  margin-bottom: 36px;
+}
+
+.ReactModal__Content .modal-content .message-1 {
+  color: #ceaf70;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: .19px;
+  margin-bottom: 24px;
+}
+
+.ReactModal__Content .modal-content .message-2 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.69;
+  letter-spacing: .2px;
+  margin-bottom: 50px;
+}
+
+.ReactModal__Content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 36px;
+}
+
+.ReactModal__Content .register {
+  border: 1px solid hsla(40,49%,62%,.15);
+  color: #ceaf70;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 2.29px;
+  transition: .3s ease;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  width: 222px;
+  margin: 0 auto;
+}

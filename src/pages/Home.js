@@ -1,7 +1,12 @@
 import React from 'react';
 
-export default function Home(){
+import '../css/home.css';
+
+export default function Home() {
     return (
-        <h1>Home</h1>
+        <main>
+            <div className='banner'></div>
+            <h1>Home</h1>
+        </main>
     );
 }
