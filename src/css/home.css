@@ -253,3 +253,73 @@
     letter-spacing: 2.29px;
     color: #ceaf70;
 }
+
+.home .content-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.home .content-5 img {
+    max-width: 494px;
+}
+
+.home .content-5 h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.home .content-5 h2 span:first-child{
+    font-size: 0.9rem;
+    letter-spacing: 4.69px;
+}
+
+.home .content-5 h2 span:last-child{
+    font-size: 4.3rem;
+    font-weight: 100;
+    letter-spacing: 1.36px;
+}
+
+.home .content-5 a{
+    margin: 0 auto;
+}
+
+.home .content-5 div .meet {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2.29px;
+    color: #ceaf70;
+}
+
+.home .content-5 .slick-initialized {
+    width: 70vw;
+    
+}
+
+.home .slick-list {
+    height: 500px;
+    margin: 0;
+}
+
+.home .slick-slider img{
+    max-width: 750px;
+    width: auto;
+    height: 500px;
+}
+
+.home .slick-next{
+    position: absolute;
+    right: 20px;
+    z-index: 50;
+}
+
+.home .slick-prev{
+    position: absolute;
+    left: 20px;
+    z-index: 50;
+}

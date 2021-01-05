@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import SlickSlider from '../components/SlickSlider';
+
 import { ScreenContext } from '../modal_context/ScreenContext';
 
 import '../css/home.css';
@@ -102,6 +104,21 @@ export default function Home() {
                     </div>
                 </Link>
             </div>
+            <div className="content-5">
+                <Link to="/amenities">
+                    <div>
+                        <h2>
+                            <span>Award-Winning</span>
+                            <br />
+                            <span>Team</span>
+                        </h2>
+                        <div className="meet">Meet the Team</div>
+                    </div>
+                </Link>
+                <SlickSlider />
+            </div>
+            <hr />
+            <footer><h1>ggg</h1></footer>
         </main>
     );
 }
