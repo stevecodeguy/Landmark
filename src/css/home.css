@@ -317,9 +317,3 @@
     right: 20px;
     z-index: 50;
 }
-
-.home .slick-prev{
-    position: absolute;
-    left: 20px;
-    z-index: 50;
-}

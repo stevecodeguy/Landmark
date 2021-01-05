@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import SlickSlider from '../components/SlickSlider';
+import Footer from '../components/Footer';
 
 import { ScreenContext } from '../modal_context/ScreenContext';
 
@@ -117,8 +118,7 @@ export default function Home() {
                 </Link>
                 <SlickSlider />
             </div>
-            <hr />
-            <footer><h1>ggg</h1></footer>
+            <Footer />
         </main>
     );
 }
