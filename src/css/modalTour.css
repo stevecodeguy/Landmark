@@ -1,5 +1,6 @@
 .tourModal {
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -7,4 +8,65 @@
   width: 230px;
   border: 5px solid #1c1c26;
   z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tourModal button {
+  background-color: transparent;
+  border: none;
+  margin: 8px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.tourModal button hr {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  width: 27px;
+}
+
+.tourModal .modal-close hr:first-child {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.tourModal .modal-close hr:last-child {
+  transform: rotate(135deg) translateY(5px);
+}
+
+.tourModal img {
+  width: 100%;
+}
+
+.tourModal p {
+  position: absolute;
+  top: 60%;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2.29px;
+  color: #fff;
+}
+
+.tourModal .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ceaf70;
+  border-radius: 50%;
+}
+
+.tourModal .circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  color: #fff;
 }

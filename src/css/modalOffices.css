@@ -3,7 +3,16 @@
   z-index: 0;
 }
 
-.ReactModal__Content {
+.overlay {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 888;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.introducing {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,7 +25,7 @@
   z-index: 999;
 }
 
-.ReactModal__Content .modal-close {
+.introducing .modal-close {
   position: fixed;
   top: 0;
   right: 0;
@@ -28,27 +37,27 @@
   cursor: pointer;
 }
 
-.ReactModal__Content .modal-close hr{
+.introducing .modal-close hr{
   border: none;
   height: 1px;
   background-color: #fff;
   width: 27px;
 }
 
-.ReactModal__Content .modal-close hr:first-child {
+.introducing .modal-close hr:first-child {
   transform: rotate(45deg) translateY(5px);
 }
 
-.ReactModal__Content .modal-close hr:last-child {
+.introducing .modal-close hr:last-child {
   transform: rotate(135deg) translateY(5px);
 }
 
-.ReactModal__Content .modal-image {
+.introducing .modal-image {
   width: 456px;
   height: 100%;
 }
 
-.ReactModal__Content .modal-content {
+.introducing .modal-content {
   height: 100%;
   width: 377px;
   margin: 0 auto;
@@ -58,19 +67,19 @@
   align-items: center;
 }
 
-.ReactModal__Content .modal-content p {
+.introducing .modal-content p {
   color: #fff;
   text-align: center;
 }
 
-.ReactModal__Content .intro {
+.introducing .intro {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 4.7px;
   margin-bottom: 36px;
 }
 
-.ReactModal__Content .modal-content .message-1 {
+.introducing .modal-content .message-1 {
   color: #ceaf70;
   font-size: 15px;
   font-weight: 400;
@@ -79,7 +88,7 @@
   margin-bottom: 24px;
 }
 
-.ReactModal__Content .modal-content .message-2 {
+.introducing .modal-content .message-2 {
   font-size: 15px;
   font-weight: 300;
   line-height: 1.69;
@@ -87,14 +96,14 @@
   margin-bottom: 50px;
 }
 
-.ReactModal__Content img {
+.introducing img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin-bottom: 36px;
 }
 
-.ReactModal__Content .register {
+.introducing .register {
   border: 1px solid hsla(40,49%,62%,.15);
   color: #ceaf70;
   text-transform: uppercase;

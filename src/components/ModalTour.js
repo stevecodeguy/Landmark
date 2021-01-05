@@ -1,46 +1,27 @@
-import React, { useState } from 'react';
-import ReactModal from 'react-modal';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../css/modalTour.css';
 
 import tour from '../assets/images/modal/tour.jpg';
+import { ModalContext } from '../modal_context/ModalContext';
 
 export default function ModalTour() {
-  const [openModal, setOpenModal] = useState(true);
-
-  const closeModal = () => { setOpenModal(false) }
+  const { setShowTourModal } = useContext(ModalContext);
 
   return (
-    <ReactModal
-      className="tourModal"
-      isOpen={openModal}
-      style={{
-        overlay: {
-          width: 0,
-          height: 0,
-          zIndex: -999,
-
-          backgroundColor: 'rgba(0, 0, 0, 0.7)'
-        },
-        content: {
-          //styled in css file 
-        }
-      }}
-    >
+    <div className="tourModal">
       <button className="modal-close"
-        onClick={(event) => closeModal(event)}
+        onClick={() => { setShowTourModal(false) }}
       >
         <hr />
         <hr />
       </button>
-      <div className="modal-content">
-        <div>
-          <img src={tour} alt="Logo for Landmark on Robson offices" />
-          <span className="message-1">Tour Display Suites</span>
-          <Link type="button" className="register" to="/offices/register">Register Now</Link>
-        </div>
+      <img src={tour} alt="Tour Display Suites Overview" />
+      <p>TOUR DISPLAY SUITES</p>
+      <div className="circle">
+        <span>►</span>
       </div>
-    </ReactModal>
+    </div>
   );
 }
