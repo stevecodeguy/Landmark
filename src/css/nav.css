@@ -204,6 +204,10 @@ nav .openNav .navLine3 {
 }
 
 .nav .menuFooter {
+  display: none;
+}
+
+.nav div.unHide{
   z-index: 900;
   position: fixed;
   bottom: 0;
@@ -213,10 +217,6 @@ nav .openNav .navLine3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav .menuFooter .hide{
-  z-index: -900;
 }
 
 .nav .menuFooter .contact {

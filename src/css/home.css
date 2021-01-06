@@ -143,6 +143,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 30px;
 }
 
 .home .content-2 div a h2 {

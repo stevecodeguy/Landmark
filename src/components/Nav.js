@@ -22,12 +22,15 @@ export default function Nav() {
         navButton.classList.toggle('openNav');
         banner.classList.toggle('toFront');
         menuList.classList.toggle('toFront');
-        menuFooter.classList.toggle('toFront');
+        menuFooter.classList.toggle('unHide');
     }
 
     useEffect(() => {
+        console.log(screenDistanceScrolled)
         function setPosition() {
             setOldYPosition(prevPosition => {
+                if (screenDistanceScrolled < 800) return 0;
+
                 const nav = document.getElementsByTagName('nav')[0];
                 if (screenDistanceScrolled < prevPosition) {
                     nav.classList.remove('hide');
