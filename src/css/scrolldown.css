@@ -1,0 +1,30 @@
+.scrollDown {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  height: 110px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.scrollDown hr {
+  width: 40px;
+  border: 1px solid white;
+  float: left;
+}
+
+.scrollDown p {
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 2.29px;
+  white-space: nowrap;
+  color: #fff;
+  float: left;
+  text-transform: uppercase;
+}
+
+
+.scrollDown img {
+  width: 28px;
+  margin-top: 15px;
+}

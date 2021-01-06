@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SlickSlider from '../components/SlickSlider';
 import Footer from '../components/Footer';
+import ScrollDown from '../components/ScrollDown';
 
 import { ScreenContext } from '../modal_context/ScreenContext';
 
@@ -40,6 +41,7 @@ export default function Home() {
 
     return (
         <main className="home">
+            <ScrollDown />
             <div className='banner'></div>
             <h1>
                 <span>TRANSFORMING VANCOUVER'S</span>
