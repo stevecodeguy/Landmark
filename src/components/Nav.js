@@ -9,6 +9,16 @@ import LandmarkOnRobson from "../assets/images/landmark.svg";
 import asia from "../assets/images/asia_standard.png";
 import magnum from "../assets/images/magnum.png";
 
+import bannerHome from '../assets/images/home/banner.jpg';
+import bannerViews from '../assets/images/270/banner.jpg';
+import bannerRobson from '../assets/images/one_robson/banner.jpg';
+import bannerResidences from '../assets/images/residences/banner.jpg';
+import bannerTours from '../assets/images/tours/banner.jpg';
+import bannerAmenities from '../assets/images/amenities/banner.jpg';
+import bannerMedia from '../assets/images/media/banner.jpg';
+import bannerRegister from '../assets/images/register/banner.jpg';
+import bannerContact from '../assets/images/contact/banner.jpg';
+
 export default function Nav() {
     const { screenDistanceScrolled } = useContext(ScreenContext);
     const [, setOldYPosition] = useState(0);
@@ -21,12 +31,57 @@ export default function Nav() {
 
         navButton.classList.toggle('openNav');
         banner.classList.toggle('toFront');
+        banner.style.removeProperty('background-image');
         menuList.classList.toggle('toFront');
         menuFooter.classList.toggle('unHide');
-    }
+    };
+
+    const addBanner = (src) => {
+        const banner = document.querySelector('.banner');
+        console.log(`url('${src}')`)
+        banner.style.backgroundImage = `url('${src}')`;
+    };
 
     useEffect(() => {
-        console.log(screenDistanceScrolled)
+        const banner = document.querySelector('.banner');
+        const menuHome = document.querySelector('.menuHome');
+        const menuRobson = document.querySelector('.menuRobson');
+        const menuViews = document.querySelector('.menuViews');
+        const menuResidences = document.querySelector('.menuResidences');
+        const menuTours = document.querySelector('.menuTours');
+        const menuAmenities = document.querySelector('.menuAmenities');
+        const menuTeam = document.querySelector('.menuTeam');
+        const menuMedia = document.querySelector('.menuMedia');
+        const menuRegister = document.querySelector('.menuRegister');
+        const menuContact = document.querySelector('.menuContact');
+
+        banner.addEventListener('mouseout', () => banner.style.removeProperty('backgroundImage'));
+
+        const classArray = [
+            [menuHome, bannerHome],
+            [menuRobson, bannerRobson],
+            [menuViews, bannerViews],
+            [menuResidences, bannerResidences],
+            [menuTours, bannerTours],
+            [menuAmenities, bannerAmenities],
+            [menuTeam, bannerHome], 
+            [menuMedia, bannerMedia],
+            [menuRegister, bannerRegister],
+            [menuContact, bannerContact]
+        ];
+
+        classArray.forEach(menuItem => {
+            menuItem[0].addEventListener('mouseover', () => addBanner(menuItem[1]));
+        });
+
+        return () => {
+            classArray.forEach((menuItem, i) => {
+                menuItem[0].removeEventListener('mouseover', () => addBanner(menuItem[1]));
+            });
+        }
+    }, []);
+
+    useEffect(() => {
         function setPosition() {
             setOldYPosition(prevPosition => {
                 if (screenDistanceScrolled < 800) return 0;
@@ -67,16 +122,16 @@ export default function Nav() {
                 </div>
             </nav>
             <ul className="menuList">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/robson">Only One Robson</Link></li>
-                <li><Link to="/views">270° Views</Link></li>
-                <li><Link to="/residences">Refined Residences</Link></li>
-                <li><Link to="/virtual-tours">Display Suites Tours</Link></li>
-                <li><Link to="/amenities">Club Robson, Lifestyle<br />Concierge Services</Link></li>
-                <li><Link to="/team">Award-Winning Team</Link></li>
-                <li><Link to="/media">Media</Link></li>
-                <li><Link to="/register">Register</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><Link className="menuHome" to="/">Home</Link></li>
+                <li><Link className="menuRobson" to="/robson">Only One Robson</Link></li>
+                <li><Link className="menuViews" to="/views">270° Views</Link></li>
+                <li><Link className="menuResidences" to="/residences">Refined Residences</Link></li>
+                <li><Link className="menuTours" to="/virtual-tours">Display Suites Tours</Link></li>
+                <li><Link className="menuAmenities" to="/amenities">Club Robson, Lifestyle<br />Concierge Services</Link></li>
+                <li><Link className="menuTeam" to="/team">Award-Winning Team</Link></li>
+                <li><Link className="menuMedia" to="/media">Media</Link></li>
+                <li><Link className="menuRegister" to="/register">Register</Link></li>
+                <li><Link className="menuContact" to="/contact">Contact</Link></li>
             </ul>
             <div className="menuFooter">
                 <div className="contact">

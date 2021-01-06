@@ -123,6 +123,6 @@ export default function Home() {
                 <SlickSlider />
             </div>
             <Footer />
-        </main>
+        </main >
     );
 }
