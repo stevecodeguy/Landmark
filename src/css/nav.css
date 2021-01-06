@@ -46,7 +46,7 @@ nav button {
   width: auto;
   cursor: pointer;
   background-color: transparent;
-  border: none; 
+  border: none;
   appearance: none;
 }
 
@@ -72,4 +72,67 @@ nav .nav-right__links a {
 
 nav .show-for-medium {
   margin-left: 30px;
+}
+
+nav .navButton div {
+  width: 45px;
+}
+
+nav .openNav .navLine1 {
+  animation: navClick1 0.5s ease both;
+}
+
+@keyframes navClick1 {
+  0% {
+    transform: translateY(0);
+    height: 2px;
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(8px) rotate(45deg);
+    height: 1px;
+    width: 35px;
+  }
+}
+
+nav .openNav .navLine2 {
+  animation: navClick2 0.5s ease both;
+}
+
+@keyframes navClick2 {
+  0% {
+    background-color: #fff;
+    height: 2px;
+  }
+
+  100% {
+    background-color: none;
+    height: 0;
+    width: 35px;
+  }
+}
+
+nav .openNav .navLine3 {
+  animation: navClick3 0.5s ease both;
+}
+
+@keyframes navClick3 {
+  0% {
+    transform: translateY(0);
+    height: 2px;
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(-8px) rotate(-45deg);
+    height: 1px;
+    width: 35px;
+  }
 }

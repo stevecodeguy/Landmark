@@ -6,6 +6,11 @@ import "../css/nav.css";
 import LandmarkOnRobson from "../assets/images/landmark.svg";
 
 export default function Nav() {
+    const openNav = () => {
+        const navButton = document.querySelector('.navButton');
+        navButton.classList.toggle('openNav');
+    }
+
     return (
         <nav>
             <Link to="/">
@@ -18,10 +23,12 @@ export default function Nav() {
                     <Link className='inactive' to="/zh-hans/" >简体</Link>
                     <Link className='show-for-medium' to="/register" >Register</Link>
                 </div>
-                <button>
-                    <hr />
-                    <hr />
-                    <hr />
+                <button className="navButton" onClick={() => openNav()}>
+                    <div>
+                        <hr className="navLine1" />
+                        <hr className="navLine2" />
+                        <hr className="navLine3" />
+                    </div>
                 </button>
             </div>
         </nav>
