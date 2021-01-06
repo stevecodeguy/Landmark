@@ -5,7 +5,7 @@ import SlickSlider from '../components/SlickSlider';
 import Footer from '../components/Footer';
 import ScrollDown from '../components/ScrollDown';
 
-import { ScreenContext } from '../modal_context/ScreenContext';
+import { ScreenContext } from '../context/ScreenContext';
 
 import '../css/home.css';
 
@@ -37,12 +37,14 @@ export default function Home() {
             };
             return newPostion;
         });
-    }, [screenDistanceScrolled])
+    }, [screenDistanceScrolled]);
 
     return (
         <main className="home">
             <ScrollDown />
-            <div className='banner'></div>
+            <div className='banner'>
+                <div></div>
+            </div>
             <h1>
                 <span>TRANSFORMING VANCOUVER'S</span>
                 <br />

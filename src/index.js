@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ModalProvider } from './modal_context/ModalContext';
-import { ScreenProvider } from './modal_context/ScreenContext';
+import { ModalProvider } from './context/ModalContext';
+import { ScreenProvider } from './context/ScreenContext';
 
 ReactDOM.render(
   <React.StrictMode>

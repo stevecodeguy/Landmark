@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../css/modalTour.css';
 
 import tour from '../assets/images/modal/tour.jpg';
-import { ModalContext } from '../modal_context/ModalContext';
+import { ModalContext } from '../context/ModalContext';
 
 export default function ModalTour() {
   const { setShowTourModal } = useContext(ModalContext);

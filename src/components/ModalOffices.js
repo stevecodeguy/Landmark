@@ -5,7 +5,7 @@ import '../css/modalOffices.css';
 
 import offices from '../assets/images/modal/offices.jpg';
 import officesLogo from '../assets/images/modal/offices-logo.png';
-import { ModalContext } from '../modal_context/ModalContext';
+import { ModalContext } from '../context/ModalContext';
 
 export default function ModalOffices() {
   const { setShowIntroModal } = useContext(ModalContext);

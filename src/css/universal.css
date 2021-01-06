@@ -5,3 +5,22 @@
     background-repeat: no-repeat;
     background-position: 20%;
 }
+
+#root ul.toFront {
+    display: flex;
+    flex-direction: column;
+    z-index: 175;
+}
+
+.toFront {
+    z-index: 100;
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.toFront div {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .5s ease;
+}

@@ -8,8 +8,8 @@ import {
 import './assets/fonts/fonts.css';
 import './css/universal.css';
 
-import { ModalContext } from './modal_context/ModalContext';
-import { ScreenContext } from './modal_context/ScreenContext';
+import { ModalContext } from './context/ModalContext';
+import { ScreenContext } from './context/ScreenContext';
 
 import ModalOffices from './components/ModalOffices';
 import ModalTour from './components/ModalTour';
