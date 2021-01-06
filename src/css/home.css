@@ -63,11 +63,14 @@
   justify-content: space-around;
   margin-bottom: 120px;
   padding-bottom: 115px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .home .content-1 img {
   max-width: 650px;
   width: 100%;
+  margin-right: 43px;
 }
 
 .home .content-1 > a {
@@ -76,6 +79,7 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 120px;
+  margin-left: 5%;
 }
 
 .home .content-1 h2 {
@@ -128,17 +132,18 @@
 
 .home .content-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-transform: uppercase;
     margin-bottom: 90px;
-}
-
-.home .content-2 img {
-  max-width: 750px;
-  height: auto;
-}
-
-.home .content-2 div a {
+  }
+  
+  .home .content-2 img {
+    max-width: 750px;
+    height: auto;
+    margin-right: 80px;
+  }
+  
+  .home .content-2 div a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,13 +194,14 @@
 
 .home .content-3 a {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
 }
 
 .home .content-3 img {
     max-width: 465px;
+    margin-left: 100px;
 }
 
 .home .content-3 h2 {
@@ -225,13 +231,14 @@
 
 .home .content-4 a {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
 }
 
 .home .content-4 img {
     max-width: 494px;
+    margin-right: 100px;
 }
 
 .home .content-4 h2 {
@@ -314,6 +321,7 @@
     max-width: 750px;
     width: auto;
     height: 500px;
+    margin: 0 15px;
 }
 
 .home .slick-next{
