@@ -30,10 +30,10 @@ export default function Home() {
             const distance = screenDistanceScrolled;
             let newPostion = {
                 ...lastPosition,
-                life: distance < 700 ? -(screenDistanceScrolled / 2) + 350 : 0,
-                watch: distance > 100 ? (screenDistanceScrolled / 5) - 190 : 0,
-                residences: distance > 700 ? (screenDistanceScrolled / 5) - 690 : 0,
-                oneRobson: distance > 2000 ? (screenDistanceScrolled / 5) - 1590 : 0,
+                life: distance < 700 ? -(distance / 2) + 350 : 0,
+                watch: distance > 100 ? (distance / 5) - 190 : 0,
+                residences: distance > 1800 && distance < 2450 ? (distance / 5) - 360 : distance >= 2450 ? 130 : 0,
+                oneRobson: distance > 2700 ? -(distance / 5) + 550 : 0,
             };
             return newPostion;
         });
@@ -68,7 +68,7 @@ export default function Home() {
                 </Link>
             </div>
             <div className="content-2">
-                <Link to="/residences">
+                <Link to="/residences" style={{ transform: 'translateY(' + adjustedScroll.residences + 'px)' }}>
                     <img src={residences} alt="RefinedResidences" />
                 </Link>
                 <div>
@@ -93,7 +93,7 @@ export default function Home() {
                         </h2>
                         <div className="explore">Explore Robson</div>
                     </div>
-                    <img src={robson} alt="RefinedResidences" />
+                    <img src={robson} alt="RefinedResidences" style={{ transform: 'translateY(' + adjustedScroll.oneRobson + 'px)' }}/>
                 </Link>
             </div>
             <div className="content-4">
