@@ -101,24 +101,45 @@
   letter-spacing: 2.29px;
   margin-top: 40px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
+/* animate vertical line */
 .home .content-1 .watch::before {
   content: "";
   position: absolute;
-  height: 0;
+  bottom: 5px;
+  right: 290px;
   width: 1px;
-  left: -31px;
-  top: 50%;
-  transition: 0.3s ease;
-  background: #ceaf70;
-  transform: translateY(-50%);
-  box-sizing: inherit;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
 }
 
 .home .content-1 .watch:hover::before {
-  width: 100%;
+  background-color: #ceaf70;
+  transform: scaleY(30);
 }
+/* end animate vertical line */
+
+/* animate horizontal line */
+.home .content-1 .watch::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 290px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+}
+
+.home .content-1 .watch:hover::after {
+  background-color: #ceaf70;
+  transform: scaleX(300) translateX(-50%);
+}
+/* end animate horizontal line */
 
 .home .content-2 {
   display: flex;
@@ -181,6 +202,43 @@
   z-index: 90;
 }
 
+/* animate vertical line */
+.home .content-2 div::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 490px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.home .content-2 div:hover::before {
+  background-color: #ceaf70;
+  transform: scaleY(30);
+}
+/* end animate vertical line */
+
+/* animate horizontal line */
+.home .content-2 div::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 490px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+}
+
+.home .content-2 div:hover::after {
+  background-color: #ceaf70;
+  transform: scaleX(300) translateX(-50%);
+}
+/* end animate horizontal line */
+
 .home .content-3 {
   margin-top: 120px;
 }
@@ -220,7 +278,46 @@
   font-weight: 600;
   letter-spacing: 2.29px;
   color: #ceaf70;
+  position: relative;
+  z-index: 2;
 }
+
+/* animate vertical line */
+.home .content-3 div div::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 350px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.home .content-3 div div:hover::before {
+  background-color: #ceaf70;
+  transform: scaleY(30);
+}
+/* end animate vertical line */
+
+/* animate horizontal line */
+.home .content-3 div div::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 350px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+}
+
+.home .content-3 div :hover::after {
+  background-color: #ceaf70;
+  transform: scaleX(300) translateX(50%);
+}
+/* end animate horizontal line */
 
 .home .content-4 a {
   display: flex;
@@ -250,6 +347,10 @@
   letter-spacing: 1.36px;
 }
 
+.home .content-4 div {
+  position: relative;
+}
+
 .home .content-4 div div {
   margin-top: 50px;
   text-align: center;
@@ -258,6 +359,43 @@
   letter-spacing: 2.29px;
   color: #ceaf70;
 }
+
+/* animate vertical line */
+.home .content-4 .discover::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 540px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.home .content-4 .discover:hover::before {
+  background-color: #ceaf70;
+  transform: scaleY(30);
+}
+/* end animate vertical line */
+
+/* animate horizontal line */
+.home .content-4 .discover::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 540px;
+  width: 1px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+}
+
+.home .content-4 .discover:hover::after {
+  background-color: #ceaf70;
+  transform: scaleX(300) translateX(-50%);
+}
+/* end animate horizontal line */
 
 .home .content-5 {
   display: flex;
