@@ -1,0 +1,4 @@
+.media .banner {
+  background-image: url("../assets/images/media/banner.jpg");
+  transition: 0.3s ease;
+}

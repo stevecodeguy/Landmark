@@ -1,7 +1,21 @@
 import React from 'react';
 
-export default function TwoSeventyView(){
+import Footer from '../components/Footer';
+
+import '../css/twoSeventyView.css';
+
+export default function RefinedResidences(){
     return (
-        <h1>TwoSeventyView</h1>
+        <main className="twoSeventy home">
+            <div className='banner'>
+                <div></div>
+            </div>
+            <h1>
+                <span>NATURALLY</span>
+                <br />
+                <span>SPECTACULAR</span>
+            </h1>
+            <Footer />
+        </main >
     );
 }

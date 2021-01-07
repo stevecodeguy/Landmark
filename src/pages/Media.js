@@ -2,18 +2,16 @@ import React from 'react';
 
 import Footer from '../components/Footer';
 
-import '../css/refinedResidences.css';
+import '../css/media.css';
 
-export default function RefinedResidences(){
+export default function Media(){
     return (
-        <main className="refined home">
+        <main className="media home">
             <div className='banner'>
                 <div></div>
             </div>
             <h1>
-                <span>REFINED</span>
-                <br />
-                <span>RESIDENCES</span>
+                <span>MEDIA</span>
             </h1>
             <Footer />
         </main >

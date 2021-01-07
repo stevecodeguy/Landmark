@@ -1,0 +1,4 @@
+.tours .banner {
+  background-image: url("../assets/images/tours/banner.jpg");
+  transition: 0.3s ease;
+}

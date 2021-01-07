@@ -2,18 +2,18 @@ import React from 'react';
 
 import Footer from '../components/Footer';
 
-import '../css/refinedResidences.css';
+import '../css/team.css';
 
-export default function RefinedResidences(){
+export default function Team(){
     return (
-        <main className="refined home">
+        <main className="team home">
             <div className='banner'>
                 <div></div>
             </div>
             <h1>
-                <span>REFINED</span>
+                <span>AWARD-WINNING</span>
                 <br />
-                <span>RESIDENCES</span>
+                <span>TEAM</span>
             </h1>
             <Footer />
         </main >

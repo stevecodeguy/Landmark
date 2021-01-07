@@ -2,18 +2,16 @@ import React from 'react';
 
 import Footer from '../components/Footer';
 
-import '../css/refinedResidences.css';
+import '../css/contact.css';
 
-export default function RefinedResidences(){
+export default function Contact(){
     return (
-        <main className="refined home">
+        <main className="contact home">
             <div className='banner'>
                 <div></div>
             </div>
             <h1>
-                <span>REFINED</span>
-                <br />
-                <span>RESIDENCES</span>
+                <span>CONTACT</span>
             </h1>
             <Footer />
         </main >

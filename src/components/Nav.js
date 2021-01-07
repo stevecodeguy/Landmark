@@ -38,7 +38,6 @@ export default function Nav() {
 
     const addBanner = (src) => {
         const banner = document.querySelector('.banner');
-        console.log(`url('${src}')`)
         banner.style.backgroundImage = `url('${src}')`;
     };
 
@@ -64,7 +63,7 @@ export default function Nav() {
             [menuResidences, bannerResidences],
             [menuTours, bannerTours],
             [menuAmenities, bannerAmenities],
-            [menuTeam, bannerHome], 
+            [menuTeam, bannerHome],
             [menuMedia, bannerMedia],
             [menuRegister, bannerRegister],
             [menuContact, bannerContact]
@@ -122,16 +121,16 @@ export default function Nav() {
                 </div>
             </nav>
             <ul className="menuList">
-                <li><Link className="menuHome" to="/">Home</Link></li>
-                <li><Link className="menuRobson" to="/robson">Only One Robson</Link></li>
-                <li><Link className="menuViews" to="/views">270° Views</Link></li>
-                <li><Link className="menuResidences" to="/residences">Refined Residences</Link></li>
-                <li><Link className="menuTours" to="/virtual-tours">Display Suites Tours</Link></li>
-                <li><Link className="menuAmenities" to="/amenities">Club Robson, Lifestyle<br />Concierge Services</Link></li>
-                <li><Link className="menuTeam" to="/team">Award-Winning Team</Link></li>
-                <li><Link className="menuMedia" to="/media">Media</Link></li>
-                <li><Link className="menuRegister" to="/register">Register</Link></li>
-                <li><Link className="menuContact" to="/contact">Contact</Link></li>
+                <li><Link className="menuHome" to="/" onClick={() => openNav()}>Home</Link></li>
+                <li><Link className="menuRobson" to="/robson" onClick={() => openNav()}>Only One Robson</Link></li>
+                <li><Link className="menuViews" to="/views" onClick={() => openNav()}>270° Views</Link></li>
+                <li><Link className="menuResidences" to="/residences" onClick={() => openNav()}>Refined Residences</Link></li>
+                <li><Link className="menuTours" to="/virtual-tours" onClick={() => openNav()}>Display Suites Tours</Link></li>
+                <li><Link className="menuAmenities" to="/amenities" onClick={() => openNav()}>Club Robson, Lifestyle<br />Concierge Services</Link></li>
+                <li><Link className="menuTeam" to="/team" onClick={() => openNav()}>Award-Winning Team</Link></li>
+                <li><Link className="menuMedia" to="/media" onClick={() => openNav()}>Media</Link></li>
+                <li><Link className="menuRegister" to="/register" onClick={() => openNav()}>Register</Link></li>
+                <li><Link className="menuContact" to="/contact" onClick={() => openNav()}>Contact</Link></li>
             </ul>
             <div className="menuFooter">
                 <div className="contact">

@@ -1,0 +1,4 @@
+.register .banner {
+  background-image: url("../assets/images/register/banner.jpg");
+  transition: 0.3s ease;
+}

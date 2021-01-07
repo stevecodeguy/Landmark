@@ -2,18 +2,18 @@ import React from 'react';
 
 import Footer from '../components/Footer';
 
-import '../css/refinedResidences.css';
+import '../css/register.css';
 
-export default function RefinedResidences(){
+export default function OnlyOneRobson(){
     return (
-        <main className="refined home">
+        <main className="register home">
             <div className='banner'>
                 <div></div>
             </div>
             <h1>
-                <span>REFINED</span>
+                <span>NEW EXCLUSIVE COLLECTION</span>
                 <br />
-                <span>RESIDENCES</span>
+                <span>URBAN 2 BEDROOM HOMES</span>
             </h1>
             <Footer />
         </main >

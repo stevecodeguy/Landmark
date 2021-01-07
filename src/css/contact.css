@@ -1,0 +1,4 @@
+.contact .banner {
+  background-image: url("../assets/images/contact/banner.jpg");
+  transition: 0.3s ease;
+}
