@@ -11,13 +11,14 @@ import slider4 from '../assets/images/home/slider_4.jpg';
 
 export default class SlickSlider extends Component {
   render() {
-    const settings = {
-      dots: false,
+    const width = window.innerWidth;
+    let settings = {
       infinite: true,
       speed: 500,
       draggable: true,
       slidesToScroll: 1,
-      variableWidth: true
+      variableWidth: true,
+      dots: width < 1025 ? true : false
     };
 
     return (

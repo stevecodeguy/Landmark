@@ -35,6 +35,7 @@
   height: 55px;
   width: 55px;
   cursor: pointer;
+  background-color: #1c1c26;
 }
 
 .introducing .modal-close hr{
@@ -116,4 +117,71 @@
   display: block;
   width: 222px;
   margin: 0 auto;
+}
+
+@media (max-width: 1025px){
+  .introducing {
+    flex-direction: column;
+    width: 670px;
+    height: 770px;
+  }
+
+  .introducing .modal-close {
+    height: 35px;
+    width: 42px;
+  }
+
+  .introducing .modal-close hr {
+    margin-left: 6px;
+  }
+
+  .introducing .modal-image {
+    width: 100%;
+    height: 320px;
+  }
+
+  .introducing .modal-image img{
+    width: 100%;
+  }
+
+  .introducing .modal-content .message-2{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 765px){
+  .introducing {
+    max-width: 340px;
+    height: 620px;
+  }
+
+  .introducing .modal-image {
+    height: 190px;
+    margin-bottom: 0;
+  }
+
+  .introducing .modal-content {
+    width: 340px;
+    height: 100%;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .introducing .modal-content .intro{
+    margin-top: 0;
+  }
+
+  .introducing .modal-content p:first-child {
+    margin-bottom: 8px;
+  }
+
+  .introducing .modal-content img {
+    margin-bottom: 30px;
+  }
+
+  .introducing .modal-content .message-1 {
+    margin-top: 0;
+    width: 260px;
+    margin: 0 auto;
+  }
 }
