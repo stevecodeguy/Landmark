@@ -460,6 +460,9 @@
   right: 20px;
   z-index: 50;
 }
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
 
 @media (max-width: 1025px) {
   .home .content-1 img {
@@ -623,6 +626,16 @@
     position: absolute;
     top: 120px;
     z-index: 2;
+  }
+
+  .home .content-5 .meet {
+    border: 1px solid hsla(40, 49%, 62%, 0.15);
+    padding: 16px 20px;
+  }
+
+  .home .content-5 .meet:hover {
+    background-color: #ceaf7015;
+    transition: 0.3s ease;
   }
 
   .home .content-5 .slick-initialized {
