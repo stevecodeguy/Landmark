@@ -15,7 +15,8 @@ export default function Footer() {
           <p>1400 Robson St. Vancouver, BC</p>
         </a>
         <div>
-          <p>604 566 2288 &#160;|</p>
+          <p>604 566 2288</p>
+          <p>&#160;|</p>
           <a href="mailto:info@landmarkonrobson.com" rel="noreferrer" target="_blank">
             <p>&#160;INFO@LANDMARKONROBSON.COM</p>
           </a>

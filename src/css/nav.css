@@ -71,6 +71,7 @@ nav .nav-right__links {
 }
 
 nav .nav-right__links a {
+  font-weight: 600;
   margin-right: 10px;
 }
 
