@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   outline: 0;
   box-sizing: inherit;
@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,8 +21,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  overflow: hidden;
 }
 
 a {

@@ -5,7 +5,7 @@
 
 .home .banner {
   background-image: url("../assets/images/home/banner.jpg");
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .home h1 {
@@ -70,8 +70,7 @@
 
 .home .content-1 img {
   max-width: 650px;
-  width: 100%;
-  margin-right: 43px;
+  width: auto;
 }
 
 .home .content-1 > a {
@@ -117,76 +116,69 @@
   box-sizing: inherit;
 }
 
-.home .content-1 .watch::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 288px;
-  left: -319px;
-  top: 50%;
-  transition: 0.3s ease;
-  background: #ceaf70;
-  transform-origin: right center;
-  transform: scaleX(0);
-  box-sizing: inherit;
+.home .content-1 .watch:hover::before {
+  width: 100%;
 }
 
 .home .content-2 {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    margin-bottom: 90px;
-  }
-  
-  .home .content-2 img {
-    max-width: 750px;
-    height: auto;
-    margin-right: 80px;
-  }
-  
-  .home .content-2 div a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.home .content-2 img {
+  max-width: 750px;
+  height: auto;
+  margin-right: 80px;
+}
+
+.home .content-2 div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
 }
 
 .home .content-2 div a h2 {
-    font-size: 0.9rem;
-    letter-spacing: 4.69px;
-    color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 4.69px;
+  color: #fff;
 }
 
 .home .content-2 div a span {
-    font-size: 4.5rem;
-    font-weight: 100;
-    letter-spacing: 1.36px;
-    color: #fff;
+  font-size: 4.5rem;
+  font-weight: 100;
+  letter-spacing: 1.36px;
+  color: #fff;
+  margin: auto;
 }
 
 .home .content-2 div a div {
-    margin-top: 40px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 2.29px;
-    color: #ceaf70;
+  margin-top: 40px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2.29px;
+  color: #ceaf70;
 }
 
 .home .content-2 div a img {
-    width: 363px;
-    height: auto;
-    margin-top: 50px;
+  width: 363px;
+  height: auto;
+  margin-top: 50px;
 }
 
 .home .content-2 div a span:last-child {
-    position: absolute;
-    bottom: 20px;
-    color: #ceaf70;
-    font-weight: 600;
-    font-size: 0.7rem;
-    letter-spacing: 2.29px;
-    z-index: 90;
+  position: absolute;
+  left: 43%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: #ceaf70;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 2.29px;
+  z-index: 90;
 }
 
 .home .content-3 {
@@ -194,139 +186,406 @@
 }
 
 .home .content-3 a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .home .content-3 img {
-    max-width: 465px;
-    margin-left: 100px;
+  max-width: 465px;
+  margin-left: 100px;
 }
 
 .home .content-3 h2 {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
-.home .content-3 h2 span:first-child{
-    font-size: 0.9rem;
-    letter-spacing: 4.69px;
+.home .content-3 h2 span:first-child {
+  font-size: 0.9rem;
+  letter-spacing: 4.69px;
 }
 
-.home .content-3 h2 span:last-child{
-    font-size: 4.3rem;
-    font-weight: 100;
-    letter-spacing: 1.36px;
+.home .content-3 h2 span:last-child {
+  font-size: 4.3rem;
+  font-weight: 100;
+  letter-spacing: 1.36px;
 }
 
 .home .content-3 div div {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 2.29px;
-    color: #ceaf70;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2.29px;
+  color: #ceaf70;
 }
 
 .home .content-4 a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .home .content-4 img {
-    max-width: 494px;
-    margin-right: 100px;
+  max-width: 494px;
+  margin-right: 100px;
 }
 
 .home .content-4 h2 {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
-.home .content-4 h2 span:first-child{
-    font-size: 0.9rem;
-    letter-spacing: 4.69px;
+.home .content-4 h2 span:first-child {
+  font-size: 0.9rem;
+  letter-spacing: 4.69px;
 }
 
-.home .content-4 h2 span:last-child{
-    font-size: 4.3rem;
-    font-weight: 100;
-    letter-spacing: 1.36px;
+.home .content-4 h2 span:last-child {
+  font-size: 4.3rem;
+  font-weight: 100;
+  letter-spacing: 1.36px;
 }
 
 .home .content-4 div div {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 2.29px;
-    color: #ceaf70;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2.29px;
+  color: #ceaf70;
 }
 
 .home .content-5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    margin-top: 60px;
-    margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 
 .home .content-5 img {
-    max-width: 494px;
+  max-width: 494px;
 }
 
 .home .content-5 h2 {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
-.home .content-5 h2 span:first-child{
-    font-size: 0.9rem;
-    letter-spacing: 4.69px;
+.home .content-5 h2 span:first-child {
+  font-size: 0.9rem;
+  letter-spacing: 4.69px;
 }
 
-.home .content-5 h2 span:last-child{
-    font-size: 4.3rem;
-    font-weight: 100;
-    letter-spacing: 1.36px;
+.home .content-5 h2 span:last-child {
+  font-size: 4.3rem;
+  font-weight: 100;
+  letter-spacing: 1.36px;
 }
 
-.home .content-5 a{
-    margin: 0 auto;
+.home .content-5 a {
+  margin: 0 auto;
 }
 
 .home .content-5 div .meet {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 2.29px;
-    color: #ceaf70;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2.29px;
+  color: #ceaf70;
 }
 
 .home .content-5 .slick-initialized {
-    width: 70vw;
+  width: 70vw;
 }
 
 .home .slick-list {
-    height: 500px;
-    margin: 0;
+  height: 500px;
+  margin: 0;
 }
 
-.home .slick-slider img{
-    max-width: 750px;
-    width: auto;
-    height: 500px;
-    margin: 0 15px;
+.home .slick-slider img {
+  max-width: 750px;
+  width: auto;
+  height: 500px;
+  margin: 0 15px;
 }
 
-.home .slick-next{
+.home .slick-next {
+  position: absolute;
+  right: 20px;
+  z-index: 50;
+}
+
+@media (max-width: 1025px) {
+  .home .content-1 img {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .home .content-1 {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .home .content-1 > a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 203px;
+  }
+
+  .home .content-2 {
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .home .content-2 > a {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .home .content-2 > a img {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .home .content-2 > div {
     position: absolute;
-    right: 20px;
-    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home .content-2 div a .discover {
+    padding: 20px 30px;
+  }
+
+  .home .content-2 div > a:nth-child(2),
+  .home .content-2 div a .discover {
+    border: 1px solid hsla(40, 49%, 62%, 0.15);
+    width: 280px;
+  }
+
+  .home .content-2 div > a:nth-child(2):hover,
+  .home .content-2 div a .discover:hover {
+    background-color: #ceaf7015;
+    transition: 0.3s ease;
+  }
+
+  #root .home div.content-2 > div > a {
+    margin: 0 auto;
+    padding: 12px 30px;
+  }
+
+  .home .content-2 div > a:nth-child(2) span {
+    position: relative;
+    top: 0;
+  }
+
+  .home .content-2 div > a:nth-child(2) {
+    margin-top: 60px;
+    height: 50px;
+  }
+
+  .home .content-2 div > a:nth-child(2) > img {
+    display: none;
+  }
+
+  .home .content-3 {
+    height: 450px;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .home .content-3 a {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .home .content-3 img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .home .content-3 a div {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+  }
+
+  .home .content-3 .explore {
+    width: 100%;
+    margin-top: 100px;
+    border: 1px solid hsla(40, 49%, 62%, 0.15);
+    white-space: nowrap;
+    padding: 14px 40px;
+  }
+
+  .home .content-3 .explore:hover {
+    background-color: #ceaf7015;
+    transition: 0.3s ease;
+  }
+
+  .home .content-4 {
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .home .content-4 a {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .home .content-4 a img {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+  }
+
+  .home .content-4 a div {
+    position: absolute;
+    top: 100px;
+  }
+
+  .home .content-4 a div .discover {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid hsla(40, 49%, 62%, 0.15);
+    white-space: nowrap;
+    padding: 14px 40px;
+  }
+
+  .home .content-4 a div .discover:hover {
+    background-color: #ceaf7015;
+    transition: 0.3s ease;
+  }
+
+  .home .content-5 {
+    position: relative;
+    flex-direction: column-reverse;
+    margin-top: 14px;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .home .content-5 a {
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+  }
+
+  .home .content-5 .slick-initialized {
+    width: 100%;
+    box-sizing: unset;
+  }
+
+  .home .content-5 .slick-track {
+    width: 100%;
+  }
+
+  #root > section > main > div.content-5 .slick-slide img {
+    width: auto;
+    max-width: unset; 
+    margin: 0;
+    object-fit: scale-down;
+  }
+}
+
+@media (max-width: 765px) {
+  .home h1 span:first-child {
+    font-size: 0.8rem;
+  }
+  .home h1 span:last-child {
+    font-size: 3rem;
+  }
+
+  .home .content-2  {
+    margin-right: 70px;
+    margin-left: 70px;
+    max-height: 330px;
+    position: relative;
+  }
+
+  .home .content-2 a img {
+    object-fit: cover;
+    height: 330px;
+  }
+
+  .home .content-2 div {
+    top: 50%;
+  }
+
+  .home .content-2 div a h2 { 
+    margin-bottom: 0;
+  }
+
+  .home .content-2 div a span { 
+    font-size: 2.6rem;
+  }
+
+  .home .content-3 {
+    max-height: 330px;
+    width: 100%;
+  }
+
+  .home .content-3 img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .home .content-3 a div  {
+    top: 50px;
+  }
+
+  .home .content-3 a div h2 span:last-child {
+    font-size: 2.5rem;
+  }
+
+  .home .content-4 {
+    max-height: 330px;
+    width: 100%;
+  }
+
+  .home .content-4 a div  {
+    top: 50px;
+  }
+
+  .home .content-4 a div .discover {
+    margin-top: 10px;
+  }
+
+  .home .content-4 a div h2 span:last-child {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .home .content-2 {
+    max-width: unset;
+    width: 100%;
+    margin: 0;
+  }
+
+  .home .content-2 img {
+    height: 330px;
+  }
+  
+  /* .home .content-2 > div{
+    top: 100px;
+    max-height: 300px;
+  } */
 }

@@ -280,3 +280,39 @@ nav .openNav .navLine3 {
   width: 85px;
   max-width: 100%;
 }
+
+@media (max-width: 765px) {
+  nav {
+    height: 90px;
+    padding: 0 20px;
+  }
+
+  nav a img {
+    width: 160px;
+  }
+
+  nav button {
+    margin-left: 0;
+  }
+
+  nav .show-for-medium {
+    display: none;
+  }
+
+  nav .nav-right {
+    flex-direction: column-reverse;
+    margin-top: 60px;
+  }
+
+  nav .nav-right__links {
+    border-right: none;
+    flex-direction: column;
+    padding-right: 0;
+    margin: 25px auto 0;
+  }
+
+  nav .nav-right__links a {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}

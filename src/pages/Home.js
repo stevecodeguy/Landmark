@@ -27,7 +27,16 @@ export default function Home() {
 
     useEffect(() => {
         setAdjustedScroll(lastPosition => {
+            const width = window.innerWidth;
             const distance = screenDistanceScrolled;
+
+            if (width < 1025) return {
+                life: distance < 700 ? -(distance / 2) + 350 : 0,
+                watch: 0,
+                residences: 0,
+                oneRobson: 0
+            }
+
             let newPostion = {
                 ...lastPosition,
                 life: distance < 700 ? -(distance / 2) + 350 : 0,
@@ -72,7 +81,7 @@ export default function Home() {
                     <img src={residences} alt="RefinedResidences" />
                 </Link>
                 <div>
-                    <Link to="/full-screen-video">
+                    <Link to="/residences">
                         <h2>Refined</h2>
                         <span>Residences</span>
                         <div className="discover">Discover the Residences</div>

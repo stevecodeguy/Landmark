@@ -70,3 +70,10 @@
   transform: translate(-40%, -50%);
   color: #fff;
 }
+
+@media (max-width: 765px){
+  .tourModal {
+    bottom: -40px;
+    top: unset;
+  }
+}
